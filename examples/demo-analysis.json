@@ -1,0 +1,90 @@
+{
+  "themes": [
+    {
+      "label": "Up-front decision clarity",
+      "interpretation": "The sample raises questions about costs and grant eligibility.",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "quotes": [
+        {
+          "evidence_id": "E1",
+          "text": "I need to know the total installation cost before booking a survey."
+        }
+      ]
+    },
+    {
+      "label": "Field workflow friction",
+      "interpretation": "Repeated entry and unreliable connectivity may complicate survey work.",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "quotes": [
+        {
+          "evidence_id": "E4",
+          "text": "I need an offline form because signal is unreliable on site."
+        }
+      ]
+    },
+    {
+      "label": "Different booking preferences",
+      "interpretation": "The sample contains contrasting preferences; neither should be treated as universal.",
+      "evidence_ids": [
+        "E5",
+        "E6"
+      ],
+      "quotes": [
+        {
+          "evidence_id": "E5",
+          "text": "I prefer speaking to someone before committing to installation."
+        },
+        {
+          "evidence_id": "E6",
+          "text": "I prefer booking online without a phone call."
+        }
+      ]
+    }
+  ],
+  "personas": [
+    {
+      "id": "P1",
+      "label": "The clarity-seeking customer",
+      "summary": "A provisional needs-based abstraction of the cost and eligibility concerns in the synthetic sample.",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "needs": [
+        "Clear costs",
+        "Eligibility explanation"
+      ],
+      "unknowns": [
+        "Budget and willingness to pay are unknown.",
+        "Preferred contact channel is not known for this profile."
+      ]
+    },
+    {
+      "id": "P2",
+      "label": "The field-focused surveyor",
+      "summary": "A provisional abstraction of the synthetic field workflow concerns.",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "needs": [
+        "Avoid duplicate entry",
+        "Capture work offline"
+      ],
+      "unknowns": [
+        "Device constraints and work volume are unknown."
+      ]
+    }
+  ],
+  "gaps": [
+    "All six records are fictional demonstration material, not participant data.",
+    "Contrasting booking preferences in E5 and E6 need further investigation.",
+    "These profiles do not cover every perspective and are not validated personas."
+  ]
+}

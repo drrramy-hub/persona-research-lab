@@ -1,0 +1,26 @@
+[
+  {
+    "id": "E1",
+    "text": "SYNTHETIC P01: I need to know the total installation cost before booking a survey."
+  },
+  {
+    "id": "E2",
+    "text": "SYNTHETIC P01: I do not understand which energy grant applies to my home."
+  },
+  {
+    "id": "E3",
+    "text": "SYNTHETIC P02: I lose time copying survey measurements into a second system."
+  },
+  {
+    "id": "E4",
+    "text": "SYNTHETIC P02: I need an offline form because signal is unreliable on site."
+  },
+  {
+    "id": "E5",
+    "text": "SYNTHETIC P03: I prefer speaking to someone before committing to installation."
+  },
+  {
+    "id": "E6",
+    "text": "SYNTHETIC P04: I prefer booking online without a phone call."
+  }
+]

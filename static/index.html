@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Persona Research Lab</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head><body>
+<header><span class="mark">P / R</span><span>PERSONA RESEARCH LAB</span><span class="tag">OPEN SOURCE · v0.1</span></header>
+<main><section class="intro"><p class="eyebrow">EVIDENCE FIRST. PEOPLE ALWAYS.</p><h1>Explore perspectives.<br>Stay close to the evidence.</h1><p>Build provisional persona agents from qualitative excerpts. Review their foundations, explore questions, and take the unknowns back to real participants.</p></section>
+<p class="notice">Simulated responses are not participant evidence. This tool supports researcher interpretation; it does not conduct interviews or validate personas.</p>
+<p id="status" role="status" aria-live="polite">Start with the fictional sample or add anonymised records.</p>
+<div class="workspace"><section class="card"><h2>01 / Prepare your evidence</h2><label>Research context<textarea id="context" rows="3" maxlength="3000">Understand needs and friction in an energy-installation service.</textarea></label>
+<button class="secondary" id="sample">Load fictional sample</button>
+<label>Evidence records — JSON array<textarea id="evidence" rows="12" placeholder='[{"id":"E1","text":"Anonymised excerpt…"},{"id":"E2","text":"Another excerpt…"}]'></textarea></label>
+<p class="note">Use 2–60 records, each with a unique id and text. Remove names and identifying details before upload. Anonymisation is your responsibility; this app does not perform it.</p>
+<div class="row"><label>Mode<select id="mode"><option value="demo">Demo — fixed fictional example</option><option value="live">Live — Microsoft Foundry</option></select></label><label>Output language<select id="language"><option>English</option><option>Arabic</option></select></label></div>
+<label class="check"><input id="consent" type="checkbox">I am authorised to send these anonymised records to my configured Azure deployment (required in live mode).</label>
+<button id="analyse">Propose themes and personas ↗</button><p class="note">Live analysis uses one model call. Comparing personas uses one call per persona, up to three. Azure charges may apply.</p></section>
+<section class="card output"><h2>02 / Review the interpretations</h2><div id="results" dir="auto"><p>Proposed themes, exact excerpts and persona cards will appear here.</p></div>
+<details><summary>Edit the proposed analysis as JSON</summary><label>Reviewed analysis<textarea id="review-json" rows="14"></textarea></label><button id="apply" class="secondary" disabled>Apply edits and review again</button></details>
+<label class="check"><input id="reviewed" type="checkbox" disabled>I have checked the evidence, interpretations, contradictions and persona boundaries.</label>
+<p class="note">Source matching checks text and IDs only. It cannot establish that the interpretation is justified.</p></section>
+<section class="card wide"><h2>03 / Explore with simulated persona agents</h2><div class="row"><label>Persona<select id="persona" disabled></select></label><label>Research question<textarea id="question" rows="2" maxlength="3000" placeholder="What concerns should we investigate before simplifying the booking journey?"></textarea></label></div>
+<div class="row"><button id="ask" disabled>Ask selected persona</button><button id="compare" disabled>Compare all personas</button></div><div id="responses" dir="auto"></div></section>
+<section class="card wide"><h2>04 / Export your working record</h2><p class="note">Exports include supplied evidence, reviewed analysis and explicitly labelled simulations. Save only where you are authorised. Refreshing this page clears the session.</p><div class="row"><button id="json" class="secondary" disabled>Export JSON</button><button id="markdown" class="secondary" disabled>Export Markdown</button></div></section></div>
+<footer>Independent community project by Ramy Hammady. Built for Microsoft Foundry. Not affiliated with or endorsed by Microsoft.</footer></main></body></html>
